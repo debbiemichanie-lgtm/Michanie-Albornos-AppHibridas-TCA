@@ -1,0 +1,7 @@
+:root { --fg:#222; --muted:#6b7280 }
+*{box-sizing:border-box} body{font-family:system-ui,Arial,Helvetica,sans-serif;margin:24px;color:var(--fg)}
+main{max-width:900px;margin-inline:auto}
+h1{margin:.2em 0}
+ul{padding-left:20px}
+pre{background:#f4f4f5;padding:12px;border-radius:8px;overflow:auto}
+footer{margin-top:48px;color:var(--muted)}

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>API Especialistas en TCA</title>
+  <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+<main>
+  <h1>API – Especialistas en Trastornos de la Conducta Alimentaria (TCA)</h1>
+  <p>Esta API permite gestionar especialistas (psicólogas, nutricionistas, psiquiatras, etc.) de Argentina.</p>
+
+  <h2>Endpoints</h2>
+  <ul>
+    <li><a href="/api/specialists">GET /api/specialists</a></li>
+    <li><a href="/api/specialists?q=ana">GET /api/specialists?q=ana</a></li>
+    <li><a href="/api/specialists?modality=virtual&insurance=prepaga">Filtros</a></li>
+  </ul>
+
+  <h2>Especialidades</h2>
+<ul>
+  <li><a href="/api/especialidades">GET /api/especialidades</a> (lista; admite <code>?q=texto</code>)</li>
+  <li>GET /api/especialidades/:id</li>
+  <li>POST /api/especialidades (protegido)</li>
+  <li>PUT /api/especialidades/:id (protegido)</li>
+  <li>DELETE /api/especialidades/:id (protegido)</li>
+</ul>
+
+  <h2>Auth</h2>
+  <pre>
+POST /api/auth/register
+POST /api/auth/login → devuelve JWT
+GET  /api/auth/me     (Bearer &lt;token&gt;)
+  </pre>
+</main>
+
+<footer>
+  <small>
+    Debbie Michanie • Tiara Albornos • Aplicaciones Híbridas • Docente: Jonathan Cruz • Comisión: DWM4AP-0225
+  </small>
+</footer>
+</body>
+</html>
+

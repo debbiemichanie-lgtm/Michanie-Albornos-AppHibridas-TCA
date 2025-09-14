@@ -1,7 +1,23 @@
-:root { --fg:#222; --muted:#6b7280 }
-*{box-sizing:border-box} body{font-family:system-ui,Arial,Helvetica,sans-serif;margin:24px;color:var(--fg)}
-main{max-width:900px;margin-inline:auto}
-h1{margin:.2em 0}
-ul{padding-left:20px}
-pre{background:#f4f4f5;padding:12px;border-radius:8px;overflow:auto}
-footer{margin-top:48px;color:var(--muted)}
+:root { --fg:#111; --muted:#666; --bg:#fff; --card:#f6f6f7; --code:#111; }
+*{box-sizing:border-box} body{margin:24px;font:16px/1.5 system-ui,Segoe UI,Roboto;color:var(--fg);background:var(--bg)}
+h1{font-size:32px;margin:0 0 8px} h2{margin:24px 0 8px;font-size:20px}
+section{background:var(--card);padding:16px;border-radius:12px;margin:16px 0}
+ul{margin:8px 0 0 20px}
+code,pre{font:13px/1.5 ui-monospace,Menlo,Consolas;background:#fff;padding:2px 6px;border-radius:8px;color:var(--code)}
+pre{padding:12px;overflow:auto}
+footer{margin-top:24px;color:var(--muted);font-size:14px;text-align:center}
+.hint{margin-left:6px;font-size:.9em;color:var(--muted)}
+
+ul li a { display: inline; }             /* por las dudas */
+.hint { 
+  display: inline; 
+  white-space: nowrap;                   /* evita que “lista” baje */
+  margin-left: 6px; 
+  font-size: .9em; 
+  color: var(--muted);
+}
+
+
+a{color:#0b5fff;text-decoration:underline}
+.small{color:var(--muted);font-size:14px}
+
